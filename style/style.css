@@ -29,7 +29,7 @@ a {
 
 /* unigue */
 .container {
-    min-width: 1070px;
+    max-width: 1070px;
     padding: 0 10px;
     margin: 0 auto;
  }   
@@ -123,7 +123,6 @@ a {
 /* header */
 
 .header {
-    position: absolute;
     height: 104px;
     width: 100%;
 }
@@ -284,7 +283,11 @@ a {
 }
 
 .practice_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background: #ffffff;
+    height: 345px
 }
 
 .practice_content {
