@@ -314,3 +314,12 @@ a {
     
 }
 /* practice */
+
+
+/* queries */
+
+@media (max-height: 732.98px) {
+    .hero {
+        height: 125vh;
+    }
+}
