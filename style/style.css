@@ -51,6 +51,10 @@ a {
     justify-content: space-between;
 }
 
+.burger_menu {
+    display: none;
+}
+
 .card {
     height: 210px;
     box-shadow: 0 13px 19px rgba(0, 0, 0, 0, 07);
@@ -349,6 +353,15 @@ a {
     margin: 100px 0;
     background: #FFFFFF;
 }
+
+.section_title.about_title_sm {
+    display: none;
+}
+
+.section_desc.about_desc_sm {
+    display: none;
+}
+
 
 .about_desc {
     margin: 15px auto 100px;

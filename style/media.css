@@ -1,13 +1,388 @@
 @media (max-width: 1200px) {
-
+    .hero {
+        height: 90vh;
+        padding-top: 165px;
+    }
 }
 
 @media (max-width: 1024px) {
     .container {
         max-width: 965px;
     }
+    .hero_btn_sea {
+        color: #FFFFFF;
+        background: #00A0C1 ;
+    }
+    .card {
+        padding: 29px 0 35px 26px;
+    }
 }
-/* 
- @media (max-width: 991px){
 
-}  */
+ @media (max-width: 991px){
+         .hero {
+            background: url('../images/background.png') no-repeat right/cover;
+         }
+         .container {
+          max-width: 940px;   
+         }
+         .practice_grid {
+          grid-template-columns: 1fr 1fr;
+          grid-row-gap: 30px; 
+         }
+         .about .d-flex {
+          flex-direction: column;
+          align-items: center;
+         }
+
+        .about_content {
+           width: 590px; 
+        }
+        .about_cards {
+            display: flex;
+        }
+        .about_cards .d-flex {
+            flex-direction: row;
+        }
+        .clients_subscribe {
+            width: 888px;
+        }
+} 
+
+@media (max-width: 768px ) {
+        .container {
+            max-width: 740px;
+        }
+        .header {
+            position: static;
+        }
+        .header .d-flex {
+            justify-content: space-between;
+        }
+        .hero {
+            background: url('../images/background.png') no-repeat left/cover;
+            padding: 84px 0 205;
+        }
+        .hero_grid {
+            grid-row-gap: 30px;
+            margin-top: 80px;
+            position: static;
+            height: auto;
+            grid-template-columns: 1fr;
+            width: 98%;
+        }
+        .clients_subscribe {
+            width: 713px;
+            padding: 0 34px;
+            height: 102px;
+        }
+        .clients_desc {
+            font-size: 19px;
+        }
+        .clients_inp {
+            width: 266px;
+        }
+        .contact_grid {
+            width: 711px;
+        }
+        .contact_email {
+            font-size: 13px;
+        }
+        .footer_top {
+            height: 344px;
+        }
+}
+
+@media (max-width: 540px) {
+    .container {
+        max-width: 500px;
+    }
+    .header_nav {
+        display: none;
+    }
+    .burger_menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .burger_btn {
+        position: relative;
+        width: 17px;
+        height: 2px;
+        background: #737373;
+        margin-left: 5px;
+    }
+    .burger_btn::before {
+        content: "";
+        position: absolute;
+        top: -6px;
+        right: 0;
+        width: 23px;
+        height: 2px;
+        background: #737373;
+    }
+    .burger_btn::after {
+        content: ""; 
+        position: absolute;
+        bottom: -6px;
+        right: 0;
+        width: 10px;
+        height: 2px;
+        background: #737373;   
+    }
+    .header_link {
+        line-height: inherit;
+    }
+    .hero_title {
+        font-size: 42px;
+    }
+    .choose_grid {
+        grid-template-columns: 1fr;
+    }
+    .choose_desc {
+        width: 475px; 
+    }
+    .practice_grid {
+        grid-template-columns: 1fr;
+        grid-row-gap: 30px;
+        margin-top: 105px;
+    }
+    .section_title {
+        font-size: 36px;
+    }
+    .section_desc br {
+        display: none;
+    }
+    .section_desc {
+        width: 410px;
+    }
+    .about_video {
+        width: 494px;
+        height: 367px;
+    }
+    .about_content {
+        width: 466px;
+        padding-top: 40px;
+    }
+    .about_cards {
+        flex-wrap: wrap;
+    }
+    .clients_top {
+        height: auto;
+    }
+    .clients_container {
+        flex-direction: column;
+        height: 1230px;
+        padding: 80px 85px;
+    }
+    .clients_desc {
+        text-align: center;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .clients_container svg {
+        width: 88%;
+        height: 88%;
+    }
+    .clients_bottom {
+        height: auto;
+    }
+    .clients_subscribe {
+        position: static;
+        flex-direction: column;
+        width: 100%;
+        height: 212px;
+        padding: 30px 30px;
+    }
+    .clients_inp .clients_btn {
+        height: 58px;
+    }
+    .clients_desc {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .contact_desc br {
+        display: none;
+    }
+    .contact_desc {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #737373;
+        width: 264px;
+        padding-bottom: 50px;
+    }
+    .contact_grid {
+        width: 400px;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-row-gap: 40px;
+    }
+    .contact_card .contact_card_middle {
+        height: 333px;
+    }
+    .contact-us {
+        padding: 40px 40px;
+        flex-direction: column;
+    }
+    .contact-us .container {
+        flex-direction: column;
+        max-width: 375px;
+        height: auto;
+    }
+    .contact-us_content {
+        margin-bottom: 50px;
+    }
+    .contact-us .align-center {
+        align-items: flex-start;
+    }
+    .footer_top {
+        height: auto;
+    }
+    .footer_top .container.d-flex {
+        flex-direction: column;
+    }
+    .footer_top .container {
+        max-width: 270px;
+        padding: 50px 10px;
+    }
+    .footer_nav:not(:last-child){
+        margin-bottom: 30px;
+    }
+    .footer_bottom .container {
+        flex-direction: column;
+        max-width: 270px;
+        height: auto;
+        padding: 25px o 55px;
+        align-items: flex-start;
+    }
+    .fa-brands .fa-facebook-square {
+        margin-left: 0;
+        }
+        .footer_copyright {
+            margin-bottom: 50px;
+        }
+}
+
+@media (max-width: 416px){
+    .container {
+       max-width: 370px; 
+    }
+    .hero_title {
+        font-weight: 700px;
+        font-size: 40px;
+        color: #252842;
+        text-align: center;
+        width: 100%;
+        line-height: 57px;
+    }
+    .hero_desc {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #737373;
+        max-width: 279px;
+        width: 100%;
+        margin: 40px auto;
+    }
+    .hero .container .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero_btn_sea {
+        margin-top: 25px;
+        border: 1px solid #00A0C1;
+        color: #00A0C1;
+        background: none;
+    }
+    .choose {
+        padding: 98px 0 70px;
+    }
+    .section_title {
+        text-align: center;
+
+    }
+    .choose .section_title {
+        max-width: 245px;
+        margin: 0 auto;
+    }
+    .choose_desc {
+        max-width: 225px;
+        margin: 10px auto 75px;
+    }
+    .choose .container {
+        max-width: 245px;
+    }
+    .practice .section_title {
+        max-width: 180px;
+        margin: 0 auto;
+    }
+    .practice_desc {
+        max-width: 225px;
+        margin: 10px auto 75px;
+    }
+    .practice_desc br {
+        display: none;
+    }
+    .practice_card {
+        min-width: 230px;
+        margin: 0 auto;
+    }
+    .about .section_title, .about .section_desc {
+        display: none;
+    }
+    .section_title.about_title_sm {
+       display: block; 
+       max-width: 308px;
+    }
+    .section_desc.about_desc_sm {
+        display: block; 
+        width: 225px;
+     }
+     .about .container {
+         max-width: 333px;
+     }
+     .about_video {
+         height: 442px;
+         width: 333px;
+     }
+     .section_title.about_title {
+         display: block;
+         text-align: left;
+     }
+     .section_desc.about_text {
+        display: block;
+        width: 330px;
+
+     }
+     .about_content {
+         width: 333px;
+     }
+     .clients_container svg {
+        width: 120%;
+     }
+     .clients_inp {
+         width: 220px;
+     }
+     .contact_grid {
+         width: 328px;
+     }
+     .contact-us .container {
+         width: 268px;
+     }
+     .contact-us .section_title {
+         font-size: 24px;
+         font-weight: 32px;
+         letter-spacing: 0. 1px;
+     }
+     .footer_top .container {
+         padding: 0;
+     }
+     .footer_bottom .container {
+         width: 261px;
+     }
+}
